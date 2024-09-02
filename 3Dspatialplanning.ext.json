@@ -1,0 +1,12 @@
+{
+  "type": "CityJSONExtension",
+  "name": "3D Spatial Planning",
+  "description": "Extension to model the noise",
+  "url": "https://someurl.org/noise.ext.json",
+  "version": "0.1",
+  "versionCityJSON": "2.0",
+  "extraAttributes": {},
+  "extraCityObjects": {},
+  "extraRootProperties": {},     
+  "extraSemanticSurfaces": {},     
+}
