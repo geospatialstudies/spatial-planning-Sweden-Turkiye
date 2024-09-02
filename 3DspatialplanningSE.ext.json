@@ -1,0 +1,357 @@
+{
+    "type": "CityJSONExtension",
+    "name": "3D Spatial Planning",
+    "description": "Extension to model 3D spatial planning in Sweden",
+    "url": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning-Sweden-Turkiye/main/3Dspatialplanning.ext.json",
+    "version": "0.1",
+    "versionCityJSON": "2.0",
+    "extraAttributes": {},
+    "extraCityObjects": {
+        "+SE_AreaRegulation": {
+            "allOf": [{
+                    "$ref": "cityobjects.schema.json#/_AbstractCityObject"
+                }, {
+                    "properties": {
+                        "type": {
+                            "enum": ["+SE_AreaRegulation"]
+                        },
+                        "attributes": {
+                            "type": "object",
+                            "properties": {
+                                "arID": {
+                                    "type": "integer"
+                                }
+
+                            }
+                        },
+
+                        "geometry": {
+                            "type": "array",
+                            "items": {
+                                "oneOf": [{
+                                        "$ref": "geomprimitives.schema.json#/MultiLineString"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/MultiSurface"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/CompositeSurface"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/Solid"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/CompositeSolid"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/MultiSolid"
+                                    }
+
+                                ]
+                            }
+                        }
+                    },
+                    "required": ["type", "geometry"]
+                }
+            ]
+        },
+        "+SE_ComprehensivePlan": {
+            "allOf": [{
+                    "$ref": "cityobjects.schema.json#/_AbstractCityObject"
+                }, {
+                    "properties": {
+                        "type": {
+                            "enum": ["+SE_ComprehensivePlan"]
+                        },
+                        "attributes": {
+                            "type": "object",
+                            "properties": {
+                                "municipalCode": {
+                                    "type": "string"
+                                },
+                                "typeOfPlan": {
+                                    "type": "string"
+                                },
+                                "title": {
+                                    "type": "string"
+                                },
+                                "status": {
+                                    "type": "string"
+                                },
+                                "startDate": {
+                                    "type": "string"
+                                },
+                                "purpose": {
+                                    "type": "string"
+                                },
+                                "process": {
+                                    "type": "string"
+                                },
+                                "summary": {
+                                    "type": "string"
+                                },
+                                "presentationScale": {
+                                    "type": "integer"
+                                },
+                                "municipality": {
+                                    "type": "string"
+                                }
+
+                            }
+                        },
+
+                        "geometry": {
+                            "type": "array",
+                            "items": {
+                                "oneOf": [{
+                                        "$ref": "geomprimitives.schema.json#/MultiLineString"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/MultiSurface"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/CompositeSurface"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/Solid"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/CompositeSolid"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/MultiSolid"
+                                    }
+
+                                ]
+                            }
+                        }
+                    },
+                    "required": ["type", "geometry"]
+                }
+            ]
+        },
+        "+SE_DetailedDevelopmentPlan": {
+            "allOf": [{
+                    "$ref": "cityobjects.schema.json#/_AbstractCityObject"
+                }, {
+                    "properties": {
+                        "type": {
+                            "enum": ["+SE_DetailedDevelopmentPlan"]
+                        },
+                        "attributes": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "ddpType": "string"
+                                },
+                                "designation": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "purpose": {
+                                    "type": "string"
+                                },
+                                "status": {
+                                    "type": "string"
+                                },
+                                "dateStatusChange": {
+                                    "type": "string"
+                                },
+                                "qualityDescription": {
+                                    "type": "string"
+                                },
+                                "utility": {
+                                    "type": "string"
+                                },
+                                "planDescription": {
+                                    "type": "integer"
+                                },
+                                "municipality": {
+                                    "type": "string"
+                                }
+
+                            }
+                        },
+
+                        "geometry": {
+                            "type": "array",
+                            "items": {
+                                "oneOf": [{
+                                        "$ref": "geomprimitives.schema.json#/MultiLineString"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/MultiSurface"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/CompositeSurface"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/Solid"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/CompositeSolid"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/MultiSolid"
+                                    }
+
+                                ]
+                            }
+                        }
+                    },
+                    "required": ["parents", "type", "geometry"]
+                }
+            ]
+        },
+        "+SE_PlanningProvision": {
+            "allOf": [{
+                    "$ref": "cityobjects.schema.json#/_AbstractCityObject"
+                }, {
+                    "properties": {
+                        "type": {
+                            "enum": ["+SE_PlanningProvision"]
+                        },
+                        "attributes": {
+                            "type": "object",
+                            "properties": {
+                                "provisionType": {
+                                    "ddpType": "string"
+                                },
+                                "ppID": {
+                                    "type": "integer"
+                                },
+                                "directoryReference": {
+                                    "type": "integer"
+                                },
+                                "provisionWording": {
+                                    "type": "string"
+                                },
+                                "originalProvisionWording": {
+                                    "type": "string"
+                                },
+                                "descriptionUsability": {
+                                    "type": "string"
+                                },
+                                "qualityDescription": {
+                                    "type": "string"
+                                },
+                                "planDescription": {
+                                    "type": "string"
+                                },
+                                "formOfUse": {
+                                    "type": "integer"
+                                },
+                                "provisionSubType": {
+                                    "type": "string"
+                                },
+                                "publicSpaceType": {
+                                    "type": "string"
+                                },
+                                "utilizationRate": {
+                                    "type": "object",
+                                    "properties": {
+                                        "uRateNote": {
+                                            "type": "string"
+                                        },
+                                        "uRateSubType": {
+                                            "type": "string",
+                                            "enum": ["DP_KM_Eg_Utnytt_StorstaAreaKvm_BruttoFastigh", "DP_KM_Eg_Utnytt_StorstaAreaKvm_Brutto", "DP_KM_Eg_Utnytt_StorstaAreaKvm_BruttoAnv", "DP_KM_Eg_Utnytt_StorstaAreaKvm_ByggnadsareaFastigh", "DP_KM_Eg_Utnytt_StorstaAreaKvm_Byggnadsarea"]
+                                        },
+                                        "uRateValue": {
+                                            "type": "number"
+                                        }
+                                    },
+                                    "required": ["uRateNote", "uRateSubType", "uRateValue"],
+                                    "additionalProperties": false
+                                },
+                                "heightOfWorks": {
+                                    "type": "object",
+                                    "properties": {
+                                        "hWorksNote": {
+                                            "type": "string"
+                                        },
+                                        "hWorksSubType": {
+                                            "type": "string",
+                                            "enum": ["DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd", "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd"]
+                                        },
+                                        "hWorksValue": {
+                                            "type": "number"
+                                        },
+                                        "hWorksID": {
+                                            "type": "number"
+                                        }
+                                    },
+                                    "required": ["hWorksNote", "hWorksSubType", "hWorksValue", "hWorksID"],
+                                    "additionalProperties": false
+                                },
+                                "municipality": {
+                                    "type": "string"
+                                },
+                                "restrictionOfLandUse": {
+                                    "type": "string"
+                                },
+
+                                "roofAngle": {
+                                    "type": "object",
+                                    "properties": {
+                                        "rAngleNote": {
+                                            "type": "string"
+                                        },
+                                        "rAngleSubType": {
+                                            "type": "string",
+                                            "enum": ["DP_KM_Eg_Takvinkel_Storsta_Storsta", "DP_KM_Eg_Takvinkel_Storsta_Byggnad", "DP_KM_Eg_Takvinkel_Storsta_Annan", "DP_KM_Eg_Takvinkel_Minsta_Minsta", "DP_KM_Eg_Takvinkel_Minsta_Byggnad"]
+                                        },
+                                        "rAngleValue": {
+                                            "type": "number"
+                                        }
+                                    },
+                                    "required": ["rAngleNote", "rAngleSubType", "rAngleValue"],
+                                    "additionalProperties": false
+                                },
+                                "propertySize": {
+                                    "type": "object",
+                                    "properties": {
+                                        "pSizeValue": {
+                                            "type": "integer"
+                                        },
+                                        "pSizeSubType": {
+                                            "type": "string",
+                                            "enum": ["DP_KM_Eg_Fastighetsstorlek_Storsta_Storsta", "DP_KM_Eg_Fastighetsstorlek_Minsta_Minsta"]
+                                        },
+                                        "pSizeID": {
+                                            "type": "number"
+                                        }
+                                    },
+                                    "required": ["pSizeValue", "pSizeSubType", "pSizeID"],
+                                    "additionalProperties": false
+                                },
+                                "investment": {
+                                    "type": "string"
+                                },
+                                "design": {
+                                    "type": "string"
+                                },
+                                "performance": {
+                                    "type": "string"
+                                }
+
+                            }
+                        },
+
+                        "geometry": {
+                            "type": "array",
+                            "items": {
+                                "oneOf": [{
+                                        "$ref": "geomprimitives.schema.json#/MultiLineString"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/MultiSurface"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/CompositeSurface"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/Solid"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/CompositeSolid"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/MultiSolid"
+                                    }
+
+                                ]
+                            }
+                        }
+                    },
+                    "required": ["parents", "type", "geometry"]
+                }
+            ]
+        },
+
+    },
+    "extraRootProperties": {},
+    "extraSemanticSurfaces": {},
+}
