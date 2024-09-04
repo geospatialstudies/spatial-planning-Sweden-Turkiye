@@ -7,19 +7,88 @@
     "versionCityJSON": "2.0",
     "extraAttributes": {},
     "extraCityObjects": {
-        "+SE_AreaRegulation": {
+        "+TR_EnvironmentalPlan": {
             "allOf": [{
                     "$ref": "cityobjects.schema.json#/_AbstractCityObject"
                 }, {
                     "properties": {
                         "type": {
-                            "enum": ["+SE_AreaRegulation"]
+                            "enum": ["+TR_EnvironmentalPlan"]
                         },
                         "attributes": {
                             "type": "object",
                             "properties": {
-                                "arID": {
-                                    "type": "integer"
+                                "administrativeBorderType": {
+                                    "type": "string"
+                                },
+                                "planningBorderType": {
+                                    "type": "string"
+                                },
+                                "specialLawBorderType": {
+                                    "type": "string"
+                                },
+                                "settlementAreaType": {
+                                    "type": "string"
+                                },
+                                "urbanWorkingAreaType": {
+                                    "type": "string"
+                                },
+                                "socialInfrastructureType": {
+                                    "type": "string"
+                                },
+                                "turismAreaType": {
+                                    "type": "string"
+                                },
+                                "protectedAreaType": {
+                                    "type": "string"
+                                },
+                                "currentProtectedAreaType": {
+                                    "type": "string"
+                                },
+                                "newBuildRestrProtAreaType": {
+                                    "type": "string"
+                                },
+                                "waterSystemType": {
+                                    "type": "string"
+                                },
+                                "energType": {
+                                    "type": "string"
+                                },
+                                "disasterAreaType": {
+                                    "type": "string"
+                                },
+                                "transportationType": {
+                                    "type": "string"
+                                },
+                                "planNote": {
+                                    "type": "string"
+                                },
+                                "spatialPlanScale": {
+                                    "type": "string"
+                                },
+                                "approvalDate": {
+                                    "type": "string"
+                                },
+                                "planName": {
+                                    "type": "string"
+                                },
+                                "planProcessNo": {
+                                    "type": "string"
+                                },
+                                "planID": {
+                                    "type": "string"
+                                },
+                                "startOfValidity": {
+                                    "type": "string"
+                                },
+                                "endOfValidity": {
+                                    "type": "string"
+                                },
+                                "backgroundMap": {
+                                    "type": "string"
+                                },
+                                "authority": {
+                                    "type": "string"
                                 }
 
                             }
@@ -50,45 +119,90 @@
                 }
             ]
         },
-        "+SE_ComprehensivePlan": {
+        "+TR_LandUseZoningPlan": {
             "allOf": [{
                     "$ref": "cityobjects.schema.json#/_AbstractCityObject"
                 }, {
                     "properties": {
                         "type": {
-                            "enum": ["+SE_ComprehensivePlan"]
+                            "enum": ["+TR_LandUseZoningPlan"]
                         },
                         "attributes": {
                             "type": "object",
                             "properties": {
-                                "municipalCode": {
+                                "administrativeBorderType": {
                                     "type": "string"
                                 },
-                                "typeOfPlan": {
+                                "planningBorderType": {
                                     "type": "string"
                                 },
-                                "title": {
+                                "specialLawBorderType": {
                                     "type": "string"
                                 },
-                                "status": {
+                                "housingStructureDensityType": {
                                     "type": "string"
                                 },
-                                "startDate": {
+                                "urbanWorkingAreaType": {
                                     "type": "string"
                                 },
-                                "purpose": {
+                                "socialInfrastructureType": {
                                     "type": "string"
                                 },
-                                "process": {
+                                "turismAreaType": {
                                     "type": "string"
                                 },
-                                "summary": {
+                                "protectedAreaType": {
                                     "type": "string"
                                 },
-                                "presentationScale": {
-                                    "type": "integer"
+                                "currentProtectedAreaType": {
+                                    "type": "string"
                                 },
-                                "municipality": {
+                                "newBuildRestrProtAreaType": {
+                                    "type": "string"
+                                },
+                                "waterSystemType": {
+                                    "type": "string"
+                                },
+                                "energType": {
+                                    "type": "string"
+                                },
+                                "disasterAreaType": {
+                                    "type": "string"
+                                },
+                                "transportationType": {
+                                    "type": "string"
+                                },
+                                "planNote": {
+                                    "type": "string"
+                                },
+                                "spatialPlanScale": {
+                                    "type": "string"
+                                },
+                                "approvalDate": {
+                                    "type": "string"
+                                },
+                                "planName": {
+                                    "type": "string"
+                                },
+                                "planProcessNo": {
+                                    "type": "string"
+                                },
+                                "planID": {
+                                    "type": "string"
+                                },
+                                "startOfValidity": {
+                                    "type": "string"
+                                },
+                                "endOfValidity": {
+                                    "type": "string"
+                                },
+                                "backgroundMap": {
+                                    "type": "string"
+                                },
+                                "authority": {
+                                    "type": "string"
+                                },
+                                "luzpID": {
                                     "type": "string"
                                 }
 
@@ -120,45 +234,90 @@
                 }
             ]
         },
-        "+SE_DetailedDevelopmentPlan": {
+        "+TR_ImplementationZoningPlan": {
             "allOf": [{
                     "$ref": "cityobjects.schema.json#/_AbstractCityObject"
                 }, {
                     "properties": {
                         "type": {
-                            "enum": ["+SE_DetailedDevelopmentPlan"]
+                            "enum": ["+TR_ImplementationZoningPlan"]
                         },
                         "attributes": {
                             "type": "object",
                             "properties": {
-                                "type": {
-                                    "ddpType": "string"
-                                },
-                                "designation": {
+                                "administrativeBorderType": {
                                     "type": "string"
                                 },
-                                "name": {
+                                "planningBorderType": {
                                     "type": "string"
                                 },
-                                "purpose": {
+                                "specialLawBorderType": {
                                     "type": "string"
                                 },
-                                "status": {
+                                "housingStructureDensityType": {
                                     "type": "string"
                                 },
-                                "dateStatusChange": {
+                                "urbanWorkingAreaType": {
                                     "type": "string"
                                 },
-                                "qualityDescription": {
+                                "socialInfrastructureType": {
                                     "type": "string"
                                 },
-                                "utility": {
+                                "turismAreaType": {
                                     "type": "string"
                                 },
-                                "planDescription": {
-                                    "type": "integer"
+                                "protectedAreaType": {
+                                    "type": "string"
                                 },
-                                "municipality": {
+                                "currentProtectedAreaType": {
+                                    "type": "string"
+                                },
+                                "newBuildRestrProtAreaType": {
+                                    "type": "string"
+                                },
+                                "waterSystemType": {
+                                    "type": "string"
+                                },
+                                "energType": {
+                                    "type": "string"
+                                },
+                                "izpID": {
+                                    "type": "string"
+                                },
+                                "disasterAreaType": {
+                                    "type": "string"
+                                },
+                                "transportationType": {
+                                    "type": "string"
+                                },
+                                "planNote": {
+                                    "type": "string"
+                                },
+                                "spatialPlanScale": {
+                                    "type": "string"
+                                },
+                                "approvalDate": {
+                                    "type": "string"
+                                },
+                                "planName": {
+                                    "type": "string"
+                                },
+                                "planProcessNo": {
+                                    "type": "string"
+                                },
+                                "planID": {
+                                    "type": "string"
+                                },
+                                "startOfValidity": {
+                                    "type": "string"
+                                },
+                                "endOfValidity": {
+                                    "type": "string"
+                                },
+                                "backgroundMap": {
+                                    "type": "string"
+                                },
+                                "authority": {
                                     "type": "string"
                                 }
 
@@ -186,139 +345,52 @@
                             }
                         }
                     },
-                    "required": ["parents", "type", "geometry"]
+                    "required": ["type", "geometry"]
                 }
             ]
         },
-        "+SE_PlanningProvision": {
+        "+TR_ParcelBlock": {
             "allOf": [{
                     "$ref": "cityobjects.schema.json#/_AbstractCityObject"
                 }, {
                     "properties": {
                         "type": {
-                            "enum": ["+SE_PlanningProvision"]
+                            "enum": ["+TR_ParcelBlock"]
                         },
                         "attributes": {
                             "type": "object",
                             "properties": {
-                                "provisionType": {
-                                    "ddpType": "string"
-                                },
-                                "ppID": {
-                                    "type": "integer"
-                                },
-                                "directoryReference": {
-                                    "type": "integer"
-                                },
-                                "provisionWording": {
+                                "blockID": {
                                     "type": "string"
                                 },
-                                "originalProvisionWording": {
+                                "blockName": {
                                     "type": "string"
                                 },
-                                "descriptionUsability": {
+                                "hasExistingBuilding": {
                                     "type": "string"
                                 },
-                                "qualityDescription": {
+                                "referenceFrontSetbackDistance": {
+                                    "type": "number"
+                                },
+                                "referenceRearSetbackDistance": {
+                                    "type": "nmber"
+                                },
+                                "referenceSideSetbackDistance": {
+                                    "type": "number"
+                                },
+                                "areaType": {
                                     "type": "string"
                                 },
-                                "planDescription": {
+                                "parceBlockType": {
                                     "type": "string"
                                 },
-                                "formOfUse": {
-                                    "type": "integer"
-                                },
-                                "provisionSubType": {
+                                "zoningType": {
                                     "type": "string"
                                 },
-                                "publicSpaceType": {
+                                "zoningSubType": {
                                     "type": "string"
                                 },
-                                "utilizationRate": {
-                                    "type": "object",
-                                    "properties": {
-                                        "uRateNote": {
-                                            "type": "string"
-                                        },
-                                        "uRateSubType": {
-                                            "type": "string",
-                                            "enum": ["DP_KM_Eg_Utnytt_StorstaAreaKvm_BruttoFastigh", "DP_KM_Eg_Utnytt_StorstaAreaKvm_Brutto", "DP_KM_Eg_Utnytt_StorstaAreaKvm_BruttoAnv", "DP_KM_Eg_Utnytt_StorstaAreaKvm_ByggnadsareaFastigh", "DP_KM_Eg_Utnytt_StorstaAreaKvm_Byggnadsarea"]
-                                        },
-                                        "uRateValue": {
-                                            "type": "number"
-                                        }
-                                    },
-                                    "required": ["uRateNote", "uRateSubType", "uRateValue"],
-                                    "additionalProperties": false
-                                },
-                                "heightOfWorks": {
-                                    "type": "object",
-                                    "properties": {
-                                        "hWorksNote": {
-                                            "type": "string"
-                                        },
-                                        "hWorksSubType": {
-                                            "type": "string",
-                                            "enum": ["DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd", "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd"]
-                                        },
-                                        "hWorksValue": {
-                                            "type": "number"
-                                        },
-                                        "hWorksID": {
-                                            "type": "number"
-                                        }
-                                    },
-                                    "required": ["hWorksNote", "hWorksSubType", "hWorksValue", "hWorksID"],
-                                    "additionalProperties": false
-                                },
-                                "municipality": {
-                                    "type": "string"
-                                },
-                                "restrictionOfLandUse": {
-                                    "type": "string"
-                                },
-
-                                "roofAngle": {
-                                    "type": "object",
-                                    "properties": {
-                                        "rAngleNote": {
-                                            "type": "string"
-                                        },
-                                        "rAngleSubType": {
-                                            "type": "string",
-                                            "enum": ["DP_KM_Eg_Takvinkel_Storsta_Storsta", "DP_KM_Eg_Takvinkel_Storsta_Byggnad", "DP_KM_Eg_Takvinkel_Storsta_Annan", "DP_KM_Eg_Takvinkel_Minsta_Minsta", "DP_KM_Eg_Takvinkel_Minsta_Byggnad"]
-                                        },
-                                        "rAngleValue": {
-                                            "type": "number"
-                                        }
-                                    },
-                                    "required": ["rAngleNote", "rAngleSubType", "rAngleValue"],
-                                    "additionalProperties": false
-                                },
-                                "propertySize": {
-                                    "type": "object",
-                                    "properties": {
-                                        "pSizeValue": {
-                                            "type": "integer"
-                                        },
-                                        "pSizeSubType": {
-                                            "type": "string",
-                                            "enum": ["DP_KM_Eg_Fastighetsstorlek_Storsta_Storsta", "DP_KM_Eg_Fastighetsstorlek_Minsta_Minsta"]
-                                        },
-                                        "pSizeID": {
-                                            "type": "number"
-                                        }
-                                    },
-                                    "required": ["pSizeValue", "pSizeSubType", "pSizeID"],
-                                    "additionalProperties": false
-                                },
-                                "investment": {
-                                    "type": "string"
-                                },
-                                "design": {
-                                    "type": "string"
-                                },
-                                "performance": {
+                                "izpID": {
                                     "type": "string"
                                 }
 
@@ -346,12 +418,201 @@
                             }
                         }
                     },
-                    "required": ["parents", "type", "geometry"]
+                    "required": ["type", "geometry"]
+                }
+            ]
+        },
+        "+TR_Parcel": {
+            "allOf": [{
+                    "$ref": "cityobjects.schema.json#/_AbstractCityObject"
+                }, {
+                    "properties": {
+                        "type": {
+                            "enum": ["+TR_Parcel"]
+                        },
+                        "attributes": {
+                            "type": "object",
+                            "properties": {
+                                "parcelID": {
+                                    "type": "string"
+                                },
+                                "blockID": {
+                                    "type": "string"
+                                },
+                                "parcelType": {
+                                    "type": "string"
+                                },
+                                "parcelNo": {
+                                    "type": "integer"
+                                },
+                                "area": {
+                                    "type": "number"
+                                },
+                                "depth": {
+                                    "type": "nmber"
+                                },
+                                "width": {
+                                    "type": "number"
+                                },
+                                "hasExistingBuilding": {
+                                    "type": "string"
+                                },
+                                "totalConstructionArea": {
+                                    "type": "number"
+                                },
+                                "maxHeight": {
+                                    "type": "integer"
+                                },
+                                "maxStorey": {
+                                    "type": "integer"
+                                },
+                                "floorAreaRatio": {
+                                    "type": "number"
+                                },
+                                "footprintAreaRatio": {
+                                    "type": "number"
+                                },
+                                "isCornerParcel": {
+                                    "type": "number"
+                                },
+                                "housingStructureDensity": {
+                                    "type": "object",
+                                    "properties": {
+                                        "type": {
+                                            "type": "string"
+                                        },
+                                        "housingType": {
+                                            "type": "string",
+                                            "enum": ["establishedHouse", "developmentHouse"]
+                                        },
+                                        "buildingApprochingDistance": {
+                                            "type": "number"
+                                        },
+                                        "referenceFrontSetbackDistance": {
+                                            "type": "number"
+                                        },
+                                        "referenceSideSetbackDistance": {
+                                            "type": "number"
+                                        },
+                                        "referenceRearSetbackDistance": {
+                                            "type": "number"
+                                        },
+                                        "buildingStructureType": {
+                                            "type": "string",
+                                            "enum": ["separate", "adjacent", "block"]
+                                        }
+                                    },
+                                    "required": ["housingType", "buildingApprochingDistance", "referenceFrontSetbackDistance", "referenceSideSetbackDistance", "referenceRearSetbackDistance", "buildingStructureType"],
+                                    "additionalProperties": false
+                                },
+                                "socialInfrastructure": {
+                                    "type": "object",
+                                    "properties": {
+
+                                        "type": {
+                                            "type": "string",
+                                            "enum": ["educationFacilityArea", "healthFacilityArea", "worshipFacilityArea", "openGreenArea", "socialCulturalArea"]
+                                        },
+                                        "educationFacility": {
+                                            "type": "string"
+                                        },
+                                        "ownership": {
+                                            "type": "string"
+                                        },
+                                        "healthFacility": {
+                                            "type": "string"
+                                        },
+                                        "worshipFacility": {
+                                            "type": "string"
+                                        },
+                                        "openGreenFacility": {
+                                            "type": "string"
+                                        },
+                                        "socialCulturalFacility": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": ["housingType", "buildingApprochingDistance", "referenceFrontSetbackDistance", "referenceSideSetbackDistance", "referenceRearSetbackDistance", "buildingStructureType"],
+                                    "additionalProperties": false
+                                }
+
+                            }
+                        },
+
+                        "geometry": {
+                            "type": "array",
+                            "items": {
+                                "oneOf": [{
+                                        "$ref": "geomprimitives.schema.json#/MultiLineString"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/MultiSurface"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/CompositeSurface"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/Solid"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/CompositeSolid"
+                                    }, {
+                                        "$ref": "geomprimitives.schema.json#/MultiSolid"
+                                    }
+
+                                ]
+                            }
+                        }
+                    },
+                    "required": ["type", "geometry"]
+                }
+            ]
+        },
+        "+TR_Building": {
+            "allOf": [{
+                    "$ref": "cityobjects.schema.json#/_AbstractBuilding"
+                }, {
+                    "properties": {
+                        "type": {
+                            "enum": ["+TR_Building"]
+                        },
+                        "attributes": {
+                            "properties": {
+                                "buildingID": {
+                                    "type": "string"
+                                },
+                                "numberOfFloor": {
+                                    "type": "integer"
+                                },
+                                "depth": {
+                                    "type": "number"
+                                },
+                                "totalConstructionArea": {
+                                    "type": "number"
+                                },
+                                "measuredHeight": {
+                                    "type": "number"
+                                },
+                                "heightReference": {
+                                    "type": "string"
+                                },
+                                "footprintArea": {
+                                    "type": "number"
+                                },
+                                "facadeLength": {
+                                    "type": "number"
+                                },
+                                "constructionPhase": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+
+                    "required": [
+                        "type",
+                        "geometry"
+                    ]
                 }
             ]
         },
 
-    },
-    "extraRootProperties": {},
-    "extraSemanticSurfaces": {},
-}
+        "extraRootProperties": {},
+        "extraSemanticSurfaces": {},
+    }
