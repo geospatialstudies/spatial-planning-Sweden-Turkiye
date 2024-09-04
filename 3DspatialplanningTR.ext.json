@@ -2,7 +2,7 @@
     "type": "CityJSONExtension",
     "name": "3D Spatial Planning",
     "description": "Extension to model 3D spatial planning in Türkiye",
-    "url": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning-Sweden-Turkiye/main/3Dspatialplanning.ext.json",
+    "url": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning-Sweden-Turkiye/main/3DspatialplanningTR.ext.json",
     "version": "0.1",
     "versionCityJSON": "2.0",
     "extraAttributes": {},
