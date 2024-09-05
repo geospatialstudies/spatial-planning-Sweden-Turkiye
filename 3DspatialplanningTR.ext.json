@@ -442,6 +442,12 @@
                                 "parcelType": {
                                     "type": "string"
                                 },
+                                "zoningType": {
+                                    "type": "string"
+                                },
+                                "zoningSubType": {
+                                    "type": "string"
+                                },
                                 "parcelNo": {
                                     "type": "integer"
                                 },
@@ -605,8 +611,7 @@
                         }
                     },
 
-                    "required": [
-                        "type",
+                    "required": ["type",
                         "geometry"
                     ]
                 }
