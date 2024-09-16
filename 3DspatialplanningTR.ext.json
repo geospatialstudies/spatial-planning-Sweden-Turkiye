@@ -272,8 +272,21 @@
                                 "currentProtectedAreaType": {
                                     "type": "string"
                                 },
-                                "newBuildRestrProtAreaType": {
-                                    "type": "string"
+                                "newBuildRestrProtArea": {
+                                    "type": "object",
+                                    "properties": {
+
+                                        "type": {
+                                            "type": "string"
+                                        },
+                                        "zoneType": {
+                                            "type": "string",
+                                            "enum": ["airportProtectionZone", "nuclearEnergyProtectionZone", "highwayProtectionZone", "pipelineProtectionZone", "waterChannelProtectionZone", "railwayProtectionZone", "subsurfaceWaterProtectionZone", "transmissionLineProtectionZone"]
+                                        },
+
+                                    },
+                                    "required": ["type", "zoneType"],
+                                    "additionalProperties": false
                                 },
                                 "waterSystemType": {
                                     "type": "string"
