@@ -251,7 +251,7 @@
                                     "required": ["uRateNote", "uRateSubType", "uRateValue"],
                                     "additionalProperties": false
                                 },
-                                "heightOfWorks": {
+                                "heightOfWorks1": {
                                     "type": "object",
                                     "properties": {
                                         "hWorksNote": {
@@ -259,7 +259,71 @@
                                         },
                                         "hWorksSubType": {
                                             "type": "string",
-                                            "enum": ["DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd", "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd"]
+                                            "enum": ["DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd", "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd",
+											DP_KM_Eg_Hojd_HogstaHojd_TotalhojdNollplan]
+                                        },
+                                        "hWorksValue": {
+                                            "type": "number"
+                                        },
+                                        "hWorksID": {
+                                            "type": "number"
+                                        }
+                                    },
+                                    "required": ["hWorksNote", "hWorksSubType", "hWorksValue", "hWorksID"],
+                                    "additionalProperties": false
+                                },
+								"heightOfWorks2": {
+                                    "type": "object",
+                                    "properties": {
+                                        "hWorksNote": {
+                                            "type": "string"
+                                        },
+                                        "hWorksSubType": {
+                                            "type": "string",
+                                            "enum": ["DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd", "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd",
+											DP_KM_Eg_Hojd_HogstaHojd_TotalhojdNollplan]
+                                        },
+                                        "hWorksValue": {
+                                            "type": "number"
+                                        },
+                                        "hWorksID": {
+                                            "type": "number"
+                                        }
+                                    },
+                                    "required": ["hWorksNote", "hWorksSubType", "hWorksValue", "hWorksID"],
+                                    "additionalProperties": false
+                                },
+								"heightOfWorks3": {
+                                    "type": "object",
+                                    "properties": {
+                                        "hWorksNote": {
+                                            "type": "string"
+                                        },
+                                        "hWorksSubType": {
+                                            "type": "string",
+                                            "enum": ["DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd", "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd",
+											DP_KM_Eg_Hojd_HogstaHojd_TotalhojdNollplan]
+                                        },
+                                        "hWorksValue": {
+                                            "type": "number"
+                                        },
+                                        "hWorksID": {
+                                            "type": "number"
+                                        }
+                                    },
+                                    "required": ["hWorksNote", "hWorksSubType", "hWorksValue", "hWorksID"],
+                                    "additionalProperties": false
+                                },
+								"heightOfWorks4": {
+                                    "type": "object",
+                                    "properties": {
+                                        "hWorksNote": {
+                                            "type": "string"
+                                        },
+                                        "hWorksSubType": {
+                                            "type": "string",
+                                            "enum": ["DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd", "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd",
+											DP_KM_Eg_Hojd_HogstaHojd_TotalhojdNollplan]
                                         },
                                         "hWorksValue": {
                                             "type": "number"
@@ -295,7 +359,58 @@
                                     "required": ["rAngleNote", "rAngleSubType", "rAngleValue"],
                                     "additionalProperties": false
                                 },
-                                "propertySize": {
+                                "propertySize1": {
+                                    "type": "object",
+                                    "properties": {
+                                        "pSizeValue": {
+                                            "type": "integer"
+                                        },
+                                        "pSizeSubType": {
+                                            "type": "string",
+                                            "enum": ["DP_KM_Eg_Fastighetsstorlek_Storsta_Storsta", "DP_KM_Eg_Fastighetsstorlek_Minsta_Minsta"]
+                                        },
+                                        "pSizeID": {
+                                            "type": "number"
+                                        }
+                                    },
+                                    "required": ["pSizeValue", "pSizeSubType", "pSizeID"],
+                                    "additionalProperties": false
+                                },
+								"propertySize2": {
+                                    "type": "object",
+                                    "properties": {
+                                        "pSizeValue": {
+                                            "type": "integer"
+                                        },
+                                        "pSizeSubType": {
+                                            "type": "string",
+                                            "enum": ["DP_KM_Eg_Fastighetsstorlek_Storsta_Storsta", "DP_KM_Eg_Fastighetsstorlek_Minsta_Minsta"]
+                                        },
+                                        "pSizeID": {
+                                            "type": "number"
+                                        }
+                                    },
+                                    "required": ["pSizeValue", "pSizeSubType", "pSizeID"],
+                                    "additionalProperties": false
+                                },
+								"propertySize3": {
+                                    "type": "object",
+                                    "properties": {
+                                        "pSizeValue": {
+                                            "type": "integer"
+                                        },
+                                        "pSizeSubType": {
+                                            "type": "string",
+                                            "enum": ["DP_KM_Eg_Fastighetsstorlek_Storsta_Storsta", "DP_KM_Eg_Fastighetsstorlek_Minsta_Minsta"]
+                                        },
+                                        "pSizeID": {
+                                            "type": "number"
+                                        }
+                                    },
+                                    "required": ["pSizeValue", "pSizeSubType", "pSizeID"],
+                                    "additionalProperties": false
+                                },
+								"propertySize4": {
                                     "type": "object",
                                     "properties": {
                                         "pSizeValue": {
