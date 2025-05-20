@@ -3,7 +3,7 @@
     "type": "CityJSONExtension",
     "name": "3D Spatial Planning",
     "description": "Extension to model 3D spatial planning in Türkiye",
-    "url": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning-Sweden-Turkiye/main/3DspatialplanningTR.ext.json",
+    "url": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning-Sweden-Turkiye/main/3DspatialplanningTR1.ext.json",
     "version": "0.1",
     "versionCityJSON": "2.0",
     "extraAttributes": {},
@@ -782,12 +782,10 @@
                                         }
                                     },
                                     "required": [
-                                        "housingType",
-                                        "buildingApprochingDistance",
-                                        "referenceFrontSetbackDistance",
-                                        "referenceSideSetbackDistance",
-                                        "referenceRearSetbackDistance",
-                                        "buildingStructureType"
+                                        "type",
+                                        "educationFacility",
+                                        "ownership"
+
                                     ],
                                     "additionalProperties": false
                                 }
