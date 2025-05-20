@@ -540,7 +540,7 @@
                                 },
                                 "referenceRearSetbackDistance":
                                 {
-                                    "type": "nmber"
+                                    "type": "number"
                                 },
                                 "referenceSideSetbackDistance":
                                 {
