@@ -653,7 +653,7 @@
                                 },
                                 "depth":
                                 {
-                                    "type": "nmber"
+                                    "type": "number"
                                 },
                                 "width":
                                 {
