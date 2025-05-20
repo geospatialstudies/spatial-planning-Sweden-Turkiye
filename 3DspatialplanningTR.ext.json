@@ -1,3 +1,4 @@
+
 {
     "type": "CityJSONExtension",
     "name": "3D Spatial Planning",
@@ -6,108 +7,148 @@
     "version": "0.1",
     "versionCityJSON": "2.0",
     "extraAttributes": {},
-    "extraCityObjects": {
-        "+TR_EnvironmentalPlan": {
-            "allOf": [{
+    "extraCityObjects":
+    {
+        "+TR_EnvironmentalPlan":
+        {
+            "allOf": [
+                {
                     "$ref": "cityobjects.schema.json#/_AbstractCityObject"
-                }, {
-                    "properties": {
-                        "type": {
+                },
+                {
+                    "properties":
+                    {
+                        "type":
+                        {
                             "enum": ["+TR_EnvironmentalPlan"]
                         },
-                        "attributes": {
+                        "attributes":
+                        {
                             "type": "object",
-                            "properties": {
-                                "administrativeBorderType": {
+                            "properties":
+                            {
+                                "administrativeBorderType":
+                                {
                                     "type": "string"
                                 },
-                                "planningBorderType": {
+                                "planningBorderType":
+                                {
                                     "type": "string"
                                 },
-                                "specialLawBorderType": {
+                                "specialLawBorderType":
+                                {
                                     "type": "string"
                                 },
-                                "settlementAreaType": {
+                                "settlementAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "urbanWorkingAreaType": {
+                                "urbanWorkingAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "socialInfrastructureType": {
+                                "socialInfrastructureType":
+                                {
                                     "type": "string"
                                 },
-                                "turismAreaType": {
+                                "turismAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "protectedAreaType": {
+                                "protectedAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "currentProtectedAreaType": {
+                                "currentProtectedAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "newBuildRestrProtAreaType": {
+                                "newBuildRestrProtAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "waterSystemType": {
+                                "waterSystemType":
+                                {
                                     "type": "string"
                                 },
-                                "energType": {
+                                "energType":
+                                {
                                     "type": "string"
                                 },
-                                "disasterAreaType": {
+                                "disasterAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "transportationType": {
+                                "transportationType":
+                                {
                                     "type": "string"
                                 },
-                                "planNote": {
+                                "planNote":
+                                {
                                     "type": "string"
                                 },
-                                "spatialPlanScale": {
+                                "spatialPlanScale":
+                                {
                                     "type": "string"
                                 },
-                                "approvalDate": {
+                                "approvalDate":
+                                {
                                     "type": "string"
                                 },
-                                "planName": {
+                                "planName":
+                                {
                                     "type": "string"
                                 },
-                                "planProcessNo": {
+                                "planProcessNo":
+                                {
                                     "type": "string"
                                 },
-                                "planID": {
+                                "planID":
+                                {
                                     "type": "string"
                                 },
-                                "startOfValidity": {
+                                "startOfValidity":
+                                {
                                     "type": "string"
                                 },
-                                "endOfValidity": {
+                                "endOfValidity":
+                                {
                                     "type": "string"
                                 },
-                                "backgroundMap": {
+                                "backgroundMap":
+                                {
                                     "type": "string"
                                 },
-                                "authority": {
+                                "authority":
+                                {
                                     "type": "string"
                                 }
 
                             }
                         },
 
-                        "geometry": {
+                        "geometry":
+                        {
                             "type": "array",
-                            "items": {
-                                "oneOf": [{
+                            "items":
+                            {
+                                "oneOf": [
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiLineString"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/Solid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSolid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSolid"
                                     }
 
@@ -119,110 +160,150 @@
                 }
             ]
         },
-        "+TR_LandUseZoningPlan": {
-            "allOf": [{
+        "+TR_LandUseZoningPlan":
+        {
+            "allOf": [
+                {
                     "$ref": "cityobjects.schema.json#/_AbstractCityObject"
-                }, {
-                    "properties": {
-                        "type": {
+                },
+                {
+                    "properties":
+                    {
+                        "type":
+                        {
                             "enum": ["+TR_LandUseZoningPlan"]
                         },
-                        "attributes": {
+                        "attributes":
+                        {
                             "type": "object",
-                            "properties": {
-                                "administrativeBorderType": {
+                            "properties":
+                            {
+                                "administrativeBorderType":
+                                {
                                     "type": "string"
                                 },
-                                "planningBorderType": {
+                                "planningBorderType":
+                                {
                                     "type": "string"
                                 },
-                                "specialLawBorderType": {
+                                "specialLawBorderType":
+                                {
                                     "type": "string"
                                 },
-                                "housingStructureDensityType": {
+                                "housingStructureDensityType":
+                                {
                                     "type": "string"
                                 },
-                                "urbanWorkingAreaType": {
+                                "urbanWorkingAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "socialInfrastructureType": {
+                                "socialInfrastructureType":
+                                {
                                     "type": "string"
                                 },
-                                "turismAreaType": {
+                                "turismAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "protectedAreaType": {
+                                "protectedAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "currentProtectedAreaType": {
+                                "currentProtectedAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "newBuildRestrProtAreaType": {
+                                "newBuildRestrProtAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "waterSystemType": {
+                                "waterSystemType":
+                                {
                                     "type": "string"
                                 },
-                                "energType": {
+                                "energType":
+                                {
                                     "type": "string"
                                 },
-                                "disasterAreaType": {
+                                "disasterAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "transportationType": {
+                                "transportationType":
+                                {
                                     "type": "string"
                                 },
-                                "planNote": {
+                                "planNote":
+                                {
                                     "type": "string"
                                 },
-                                "spatialPlanScale": {
+                                "spatialPlanScale":
+                                {
                                     "type": "string"
                                 },
-                                "approvalDate": {
+                                "approvalDate":
+                                {
                                     "type": "string"
                                 },
-                                "planName": {
+                                "planName":
+                                {
                                     "type": "string"
                                 },
-                                "planProcessNo": {
+                                "planProcessNo":
+                                {
                                     "type": "string"
                                 },
-                                "planID": {
+                                "planID":
+                                {
                                     "type": "string"
                                 },
-                                "startOfValidity": {
+                                "startOfValidity":
+                                {
                                     "type": "string"
                                 },
-                                "endOfValidity": {
+                                "endOfValidity":
+                                {
                                     "type": "string"
                                 },
-                                "backgroundMap": {
+                                "backgroundMap":
+                                {
                                     "type": "string"
                                 },
-                                "authority": {
+                                "authority":
+                                {
                                     "type": "string"
                                 },
-                                "luzpID": {
+                                "luzpID":
+                                {
                                     "type": "string"
                                 }
 
                             }
                         },
 
-                        "geometry": {
+                        "geometry":
+                        {
                             "type": "array",
-                            "items": {
-                                "oneOf": [{
+                            "items":
+                            {
+                                "oneOf": [
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiLineString"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/Solid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSolid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSolid"
                                     }
 
@@ -234,52 +315,72 @@
                 }
             ]
         },
-        "+TR_ImplementationZoningPlan": {
-            "allOf": [{
+        "+TR_ImplementationZoningPlan":
+        {
+            "allOf": [
+                {
                     "$ref": "cityobjects.schema.json#/_AbstractCityObject"
-                }, {
-                    "properties": {
-                        "type": {
+                },
+                {
+                    "properties":
+                    {
+                        "type":
+                        {
                             "enum": ["+TR_ImplementationZoningPlan"]
                         },
-                        "attributes": {
+                        "attributes":
+                        {
                             "type": "object",
-                            "properties": {
-                                "administrativeBorderType": {
+                            "properties":
+                            {
+                                "administrativeBorderType":
+                                {
                                     "type": "string"
                                 },
-                                "planningBorderType": {
+                                "planningBorderType":
+                                {
                                     "type": "string"
                                 },
-                                "specialLawBorderType": {
+                                "specialLawBorderType":
+                                {
                                     "type": "string"
                                 },
-                                "housingStructureDensityType": {
+                                "housingStructureDensityType":
+                                {
                                     "type": "string"
                                 },
-                                "urbanWorkingAreaType": {
+                                "urbanWorkingAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "socialInfrastructureType": {
+                                "socialInfrastructureType":
+                                {
                                     "type": "string"
                                 },
-                                "turismAreaType": {
+                                "turismAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "protectedAreaType": {
+                                "protectedAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "currentProtectedAreaType": {
+                                "currentProtectedAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "newBuildRestrProtArea": {
+                                "newBuildRestrProtArea":
+                                {
                                     "type": "object",
-                                    "properties": {
+                                    "properties":
+                                    {
 
-                                        "protectedType": {
+                                        "protectedType":
+                                        {
                                             "type": "string"
                                         },
-                                        "zoneType": {
+                                        "zoneType":
+                                        {
                                             "type": "string",
                                             "enum": ["airportProtectionZone", "nuclearEnergyProtectionZone", "highwayProtectionZone", "pipelineProtectionZone", "waterChannelProtectionZone", "railwayProtectionZone", "subsurfaceWaterProtectionZone", "transmissionLineProtectionZone"]
                                         }
@@ -288,69 +389,92 @@
                                     "required": ["type", "zoneType"],
                                     "additionalProperties": false
                                 },
-                                "waterSystemType": {
+                                "waterSystemType":
+                                {
                                     "type": "string"
                                 },
-                                "energType": {
+                                "energType":
+                                {
                                     "type": "string"
                                 },
-                                "izpID": {
+                                "izpID":
+                                {
                                     "type": "string"
                                 },
-                                "disasterAreaType": {
+                                "disasterAreaType":
+                                {
                                     "type": "string"
                                 },
-                                "transportationType": {
+                                "transportationType":
+                                {
                                     "type": "string"
                                 },
-                                "planNote": {
+                                "planNote":
+                                {
                                     "type": "string"
                                 },
-                                "spatialPlanScale": {
+                                "spatialPlanScale":
+                                {
                                     "type": "string"
                                 },
-                                "approvalDate": {
+                                "approvalDate":
+                                {
                                     "type": "string"
                                 },
-                                "planName": {
+                                "planName":
+                                {
                                     "type": "string"
                                 },
-                                "planProcessNo": {
+                                "planProcessNo":
+                                {
                                     "type": "string"
                                 },
-                                "planID": {
+                                "planID":
+                                {
                                     "type": "string"
                                 },
-                                "startOfValidity": {
+                                "startOfValidity":
+                                {
                                     "type": "string"
                                 },
-                                "endOfValidity": {
+                                "endOfValidity":
+                                {
                                     "type": "string"
                                 },
-                                "backgroundMap": {
+                                "backgroundMap":
+                                {
                                     "type": "string"
                                 },
-                                "authority": {
+                                "authority":
+                                {
                                     "type": "string"
                                 }
 
                             }
                         },
 
-                        "geometry": {
+                        "geometry":
+                        {
                             "type": "array",
-                            "items": {
-                                "oneOf": [{
+                            "items":
+                            {
+                                "oneOf": [
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiLineString"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/Solid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSolid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSolid"
                                     }
 
@@ -362,68 +486,94 @@
                 }
             ]
         },
-        "+TR_ParcelBlock": {
-            "allOf": [{
+        "+TR_ParcelBlock":
+        {
+            "allOf": [
+                {
                     "$ref": "cityobjects.schema.json#/_AbstractCityObject"
-                }, {
-                    "properties": {
-                        "type": {
+                },
+                {
+                    "properties":
+                    {
+                        "type":
+                        {
                             "enum": ["+TR_ParcelBlock"]
                         },
-                        "attributes": {
+                        "attributes":
+                        {
                             "type": "object",
-                            "properties": {
-                                "blockID": {
+                            "properties":
+                            {
+                                "blockID":
+                                {
                                     "type": "string"
                                 },
-                                "blockName": {
+                                "blockName":
+                                {
                                     "type": "string"
                                 },
-                                "hasExistingBuilding": {
+                                "hasExistingBuilding":
+                                {
                                     "type": "string"
                                 },
-                                "referenceFrontSetbackDistance": {
+                                "referenceFrontSetbackDistance":
+                                {
                                     "type": "number"
                                 },
-                                "referenceRearSetbackDistance": {
+                                "referenceRearSetbackDistance":
+                                {
                                     "type": "nmber"
                                 },
-                                "referenceSideSetbackDistance": {
+                                "referenceSideSetbackDistance":
+                                {
                                     "type": "number"
                                 },
-                                "areaType": {
+                                "areaType":
+                                {
                                     "type": "string"
                                 },
-                                "parceBlockType": {
+                                "parceBlockType":
+                                {
                                     "type": "string"
                                 },
-                                "zoningType": {
+                                "zoningType":
+                                {
                                     "type": "string"
                                 },
-                                "zoningSubType": {
+                                "zoningSubType":
+                                {
                                     "type": "string"
                                 },
-                                "izpID": {
+                                "izpID":
+                                {
                                     "type": "string"
                                 }
 
                             }
                         },
 
-                        "geometry": {
+                        "geometry":
+                        {
                             "type": "array",
-                            "items": {
-                                "oneOf": [{
+                            "items":
+                            {
+                                "oneOf": [
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiLineString"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/Solid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSolid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSolid"
                                     }
 
@@ -435,88 +585,120 @@
                 }
             ]
         },
-        "+TR_Parcel": {
-            "allOf": [{
+        "+TR_Parcel":
+        {
+            "allOf": [
+                {
                     "$ref": "cityobjects.schema.json#/_AbstractCityObject"
-                }, {
-                    "properties": {
-                        "type": {
+                },
+                {
+                    "properties":
+                    {
+                        "type":
+                        {
                             "enum": ["+TR_Parcel"]
                         },
-                        "attributes": {
+                        "attributes":
+                        {
                             "type": "object",
-                            "properties": {
-                                "parcelID": {
+                            "properties":
+                            {
+                                "parcelID":
+                                {
                                     "type": "string"
                                 },
-                                "blockID": {
+                                "blockID":
+                                {
                                     "type": "string"
                                 },
-                                "parcelType": {
+                                "parcelType":
+                                {
                                     "type": "string"
                                 },
-                                "zoningType": {
+                                "zoningType":
+                                {
                                     "type": "string"
                                 },
-                                "zoningSubType": {
+                                "zoningSubType":
+                                {
                                     "type": "string"
                                 },
-                                "parcelNo": {
+                                "parcelNo":
+                                {
                                     "type": "integer"
                                 },
-                                "area": {
+                                "area":
+                                {
                                     "type": "number"
                                 },
-                                "depth": {
+                                "depth":
+                                {
                                     "type": "nmber"
                                 },
-                                "width": {
+                                "width":
+                                {
                                     "type": "number"
                                 },
-                                "hasExistingBuilding": {
+                                "hasExistingBuilding":
+                                {
                                     "type": "string"
                                 },
-                                "totalConstructionArea": {
+                                "totalConstructionArea":
+                                {
                                     "type": "number"
                                 },
-                                "maxHeight": {
+                                "maxHeight":
+                                {
                                     "type": "integer"
                                 },
-                                "maxStorey": {
+                                "maxStorey":
+                                {
                                     "type": "integer"
                                 },
-                                "floorAreaRatio": {
+                                "floorAreaRatio":
+                                {
                                     "type": "number"
                                 },
-                                "footprintAreaRatio": {
+                                "footprintAreaRatio":
+                                {
                                     "type": "number"
                                 },
-                                "isCornerParcel": {
+                                "isCornerParcel":
+                                {
                                     "type": "number"
                                 },
-                                "housingStructureDensity": {
+                                "housingStructureDensity":
+                                {
                                     "type": "object",
-                                    "properties": {
-                                        "type": {
+                                    "properties":
+                                    {
+                                        "type":
+                                        {
                                             "type": "string"
                                         },
-                                        "housingType": {
+                                        "housingType":
+                                        {
                                             "type": "string",
                                             "enum": ["establishedHouse", "developmentHouse"]
                                         },
-                                        "buildingApprochingDistance": {
+                                        "buildingApprochingDistance":
+                                        {
                                             "type": "number"
                                         },
-                                        "referenceFrontSetbackDistance": {
+                                        "referenceFrontSetbackDistance":
+                                        {
                                             "type": "number"
                                         },
-                                        "referenceSideSetbackDistance": {
+                                        "referenceSideSetbackDistance":
+                                        {
                                             "type": "number"
                                         },
-                                        "referenceRearSetbackDistance": {
+                                        "referenceRearSetbackDistance":
+                                        {
                                             "type": "number"
                                         },
-                                        "buildingStructureType": {
+                                        "buildingStructureType":
+                                        {
                                             "type": "string",
                                             "enum": ["separate", "adjacent", "block"]
                                         }
@@ -524,30 +706,39 @@
                                     "required": ["housingType", "buildingApprochingDistance", "referenceFrontSetbackDistance", "referenceSideSetbackDistance", "referenceRearSetbackDistance", "buildingStructureType"],
                                     "additionalProperties": false
                                 },
-                                "socialInfrastructure": {
+                                "socialInfrastructure":
+                                {
                                     "type": "object",
-                                    "properties": {
+                                    "properties":
+                                    {
 
-                                        "type": {
+                                        "type":
+                                        {
                                             "type": "string",
                                             "enum": ["educationFacilityArea", "healthFacilityArea", "worshipFacilityArea", "openGreenArea", "socialCulturalArea"]
                                         },
-                                        "educationFacility": {
+                                        "educationFacility":
+                                        {
                                             "type": "string"
                                         },
-                                        "ownership": {
+                                        "ownership":
+                                        {
                                             "type": "string"
                                         },
-                                        "healthFacility": {
+                                        "healthFacility":
+                                        {
                                             "type": "string"
                                         },
-                                        "worshipFacility": {
+                                        "worshipFacility":
+                                        {
                                             "type": "string"
                                         },
-                                        "openGreenFacility": {
+                                        "openGreenFacility":
+                                        {
                                             "type": "string"
                                         },
-                                        "socialCulturalFacility": {
+                                        "socialCulturalFacility":
+                                        {
                                             "type": "string"
                                         }
                                     },
@@ -558,20 +749,28 @@
                             }
                         },
 
-                        "geometry": {
+                        "geometry":
+                        {
                             "type": "array",
-                            "items": {
-                                "oneOf": [{
+                            "items":
+                            {
+                                "oneOf": [
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiLineString"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/Solid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSolid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSolid"
                                     }
 
@@ -583,41 +782,57 @@
                 }
             ]
         },
-        "+TR_Building": {
-            "allOf": [{
+        "+TR_Building":
+        {
+            "allOf": [
+                {
                     "$ref": "cityobjects.schema.json#/_AbstractBuilding"
-                }, {
-                    "properties": {
-                        "type": {
+                },
+                {
+                    "properties":
+                    {
+                        "type":
+                        {
                             "enum": ["+TR_Building"]
                         },
-                        "attributes": {
-                            "properties": {
-                                "buildingID": {
+                        "attributes":
+                        {
+                            "properties":
+                            {
+                                "buildingID":
+                                {
                                     "type": "string"
                                 },
-                                "numberOfFloor": {
+                                "numberOfFloor":
+                                {
                                     "type": "integer"
                                 },
-                                "depth": {
+                                "depth":
+                                {
                                     "type": "number"
                                 },
-                                "totalConstructionArea": {
+                                "totalConstructionArea":
+                                {
                                     "type": "number"
                                 },
-                                "measuredHeight": {
+                                "measuredHeight":
+                                {
                                     "type": "number"
                                 },
-                                "heightReference": {
+                                "heightReference":
+                                {
                                     "type": "string"
                                 },
-                                "footprintArea": {
+                                "footprintArea":
+                                {
                                     "type": "number"
                                 },
-                                "facadeLength": {
+                                "facadeLength":
+                                {
                                     "type": "number"
                                 },
-                                "constructionPhase": {
+                                "constructionPhase":
+                                {
                                     "type": "string"
                                 }
                             }
@@ -629,8 +844,9 @@
                     ]
                 }
             ]
-	}},
+        }
+    },
 
-        "extraRootProperties": {},
-        "extraSemanticSurfaces": {}
+    "extraRootProperties": {},
+    "extraSemanticSurfaces": {}
 }
