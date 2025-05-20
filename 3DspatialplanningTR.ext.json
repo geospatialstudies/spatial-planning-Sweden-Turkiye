@@ -629,8 +629,8 @@
                     ]
                 }
             ]
-        },
+	}},
 
         "extraRootProperties": {},
         "extraSemanticSurfaces": {}
-    }
+}
