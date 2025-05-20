@@ -282,7 +282,7 @@
                                         "zoneType": {
                                             "type": "string",
                                             "enum": ["airportProtectionZone", "nuclearEnergyProtectionZone", "highwayProtectionZone", "pipelineProtectionZone", "waterChannelProtectionZone", "railwayProtectionZone", "subsurfaceWaterProtectionZone", "transmissionLineProtectionZone"]
-                                        },
+                                        }
 
                                     },
                                     "required": ["type", "zoneType"],
