@@ -276,7 +276,7 @@
                                     "type": "object",
                                     "properties": {
 
-                                        "type": {
+                                        "protectedType": {
                                             "type": "string"
                                         },
                                         "zoneType": {
