@@ -1,6 +1,6 @@
 {
     "type": "CityJSONExtension",
-    "name": "3D Spatial Planning",
+    "name": "3DSpatialPlanning",
     "description": "Extension to model 3D spatial planning in Sweden",
     "url": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning-Sweden-Turkiye/main/3DspatialplanningSE.ext.json",
     "version": "0.1",
