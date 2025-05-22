@@ -186,7 +186,7 @@
                             }
                         }
                     },
-                    "required": ["parents", "type", "geometry"]
+                    "required": ["type", "geometry"]
                 }
             ]
         },
