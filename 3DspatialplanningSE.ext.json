@@ -260,7 +260,7 @@
                                         "hWorksSubType": {
                                             "type": "string",
                                             "enum": ["DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd", "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd",
-											DP_KM_Eg_Hojd_HogstaHojd_TotalhojdNollplan]
+											"DP_KM_Eg_Hojd_HogstaHojd_TotalhojdNollplan"]
                                         },
                                         "hWorksValue": {
                                             "type": "number"
