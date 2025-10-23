@@ -5,15 +5,20 @@
     "url": "https://raw.githubusercontent.com/geospatialstudies/spatial-planning-Sweden-Turkiye/main/3DspatialplanningSE.ext.json",
     "version": "0.1",
     "versionCityJSON": "2.0",
-    "extraAttributes": {},
+    "extraAttributes": {
+    },
     "extraCityObjects": {
         "+SE_AreaRegulation": {
-            "allOf": [{
+            "allOf": [
+                {
                     "$ref": "cityobjects.schema.json#/_AbstractCityObject"
-                }, {
+                },
+                {
                     "properties": {
                         "type": {
-                            "enum": ["+SE_AreaRegulation"]
+                            "enum": [
+                                "+SE_AreaRegulation"
+                            ]
                         },
                         "attributes": {
                             "type": "object",
@@ -21,42 +26,52 @@
                                 "arID": {
                                     "type": "integer"
                                 }
-
                             }
                         },
-
                         "geometry": {
                             "type": "array",
                             "items": {
-                                "oneOf": [{
+                                "oneOf": [
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiLineString"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/Solid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSolid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSolid"
                                     }
-
                                 ]
                             }
                         }
                     },
-                    "required": ["type", "geometry"]
+                    "required": [
+                        "type",
+                        "geometry"
+                    ]
                 }
             ]
         },
         "+SE_ComprehensivePlan": {
-            "allOf": [{
+            "allOf": [
+                {
                     "$ref": "cityobjects.schema.json#/_AbstractCityObject"
-                }, {
+                },
+                {
                     "properties": {
                         "type": {
-                            "enum": ["+SE_ComprehensivePlan"]
+                            "enum": [
+                                "+SE_ComprehensivePlan"
+                            ]
                         },
                         "attributes": {
                             "type": "object",
@@ -91,42 +106,52 @@
                                 "municipality": {
                                     "type": "string"
                                 }
-
                             }
                         },
-
                         "geometry": {
                             "type": "array",
                             "items": {
-                                "oneOf": [{
+                                "oneOf": [
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiLineString"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/Solid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSolid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSolid"
                                     }
-
                                 ]
                             }
                         }
                     },
-                    "required": ["type", "geometry"]
+                    "required": [
+                        "type",
+                        "geometry"
+                    ]
                 }
             ]
         },
         "+SE_DetailedDevelopmentPlan": {
-            "allOf": [{
+            "allOf": [
+                {
                     "$ref": "cityobjects.schema.json#/_AbstractCityObject"
-                }, {
+                },
+                {
                     "properties": {
                         "type": {
-                            "enum": ["+SE_DetailedDevelopmentPlan"]
+                            "enum": [
+                                "+SE_DetailedDevelopmentPlan"
+                            ]
                         },
                         "attributes": {
                             "type": "object",
@@ -161,42 +186,52 @@
                                 "municipality": {
                                     "type": "string"
                                 }
-
                             }
                         },
-
                         "geometry": {
                             "type": "array",
                             "items": {
-                                "oneOf": [{
+                                "oneOf": [
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiLineString"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/Solid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSolid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSolid"
                                     }
-
                                 ]
                             }
                         }
                     },
-                    "required": ["type", "geometry"]
+                    "required": [
+                        "type",
+                        "geometry"
+                    ]
                 }
             ]
         },
         "+SE_PlanningProvision": {
-            "allOf": [{
+            "allOf": [
+                {
                     "$ref": "cityobjects.schema.json#/_AbstractCityObject"
-                }, {
+                },
+                {
                     "properties": {
                         "type": {
-                            "enum": ["+SE_PlanningProvision"]
+                            "enum": [
+                                "+SE_PlanningProvision"
+                            ]
                         },
                         "attributes": {
                             "type": "object",
@@ -242,13 +277,24 @@
                                         },
                                         "uRateSubType": {
                                             "type": "string",
-                                            "enum": ["DP_KM_Eg_Utnytt_StorstaAreaKvm_BruttoFastigh", "DP_KM_Eg_Utnytt_StorstaAreaKvm_Brutto", "DP_KM_Eg_Utnytt_StorstaAreaKvm_BruttoAnv", "DP_KM_Eg_Utnytt_StorstaAreaKvm_ByggnadsareaFastigh", "DP_KM_Eg_Utnytt_StorstaAreaKvm_Byggnadsarea"]
+                                            "enum": [
+                                                "DP_KM_Eg_Utnytt_StorstaAreaKvm_BruttoFastigh",
+                                                "DP_KM_Eg_Utnytt_StorstaAreaKvm_Brutto",
+                                                "DP_KM_Eg_Utnytt_StorstaAreaKvm_BruttoAnv",
+                                                "DP_KM_Eg_Utnytt_StorstaAreaKvm_ByggnadsareaFastigh",
+                                                "DP_KM_Eg_Utnytt_StorstaAreaKvm_Byggnadsarea",
+                                                "DP_KM_Eg_Utnytt_MinstaAreaKvm_Brut toAnv"
+                                            ]
                                         },
                                         "uRateValue": {
                                             "type": "number"
                                         }
                                     },
-                                    "required": ["uRateNote", "uRateSubType", "uRateValue"],
+                                    "required": [
+                                        "uRateNote",
+                                        "uRateSubType",
+                                        "uRateValue"
+                                    ],
                                     "additionalProperties": false
                                 },
                                 "heightOfWorks1": {
@@ -259,8 +305,14 @@
                                         },
                                         "hWorksSubType": {
                                             "type": "string",
-                                            "enum": ["DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd", "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd",
-											"DP_KM_Eg_Hojd_HogstaHojd_TotalhojdNollplan"]
+                                            "enum": [
+                                                "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_TotalhojdNollplan"
+                                            ]
                                         },
                                         "hWorksValue": {
                                             "type": "number"
@@ -269,10 +321,15 @@
                                             "type": "number"
                                         }
                                     },
-                                    "required": ["hWorksNote", "hWorksSubType", "hWorksValue", "hWorksID"],
+                                    "required": [
+                                        "hWorksNote",
+                                        "hWorksSubType",
+                                        "hWorksValue",
+                                        "hWorksID"
+                                    ],
                                     "additionalProperties": false
                                 },
-								"heightOfWorks2": {
+                                "heightOfWorks2": {
                                     "type": "object",
                                     "properties": {
                                         "hWorksNote": {
@@ -280,8 +337,14 @@
                                         },
                                         "hWorksSubType": {
                                             "type": "string",
-                                            "enum": ["DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd", "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd",
-											"DP_KM_Eg_Hojd_HogstaHojd_TotalhojdNollplan"]
+                                            "enum": [
+                                                "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_TotalhojdNollplan"
+                                            ]
                                         },
                                         "hWorksValue": {
                                             "type": "number"
@@ -290,10 +353,15 @@
                                             "type": "number"
                                         }
                                     },
-                                    "required": ["hWorksNote", "hWorksSubType", "hWorksValue", "hWorksID"],
+                                    "required": [
+                                        "hWorksNote",
+                                        "hWorksSubType",
+                                        "hWorksValue",
+                                        "hWorksID"
+                                    ],
                                     "additionalProperties": false
                                 },
-								"heightOfWorks3": {
+                                "heightOfWorks3": {
                                     "type": "object",
                                     "properties": {
                                         "hWorksNote": {
@@ -301,8 +369,14 @@
                                         },
                                         "hWorksSubType": {
                                             "type": "string",
-                                            "enum": ["DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd", "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd",
-											"DP_KM_Eg_Hojd_HogstaHojd_TotalhojdNollplan"]
+                                            "enum": [
+                                                "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_TotalhojdNollplan"
+                                            ]
                                         },
                                         "hWorksValue": {
                                             "type": "number"
@@ -311,10 +385,15 @@
                                             "type": "number"
                                         }
                                     },
-                                    "required": ["hWorksNote", "hWorksSubType", "hWorksValue", "hWorksID"],
+                                    "required": [
+                                        "hWorksNote",
+                                        "hWorksSubType",
+                                        "hWorksValue",
+                                        "hWorksID"
+                                    ],
                                     "additionalProperties": false
                                 },
-								"heightOfWorks4": {
+                                "heightOfWorks4": {
                                     "type": "object",
                                     "properties": {
                                         "hWorksNote": {
@@ -322,8 +401,14 @@
                                         },
                                         "hWorksSubType": {
                                             "type": "string",
-                                            "enum": ["DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd", "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan", "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd",
-											"DP_KM_Eg_Hojd_HogstaHojd_TotalhojdNollplan"]
+                                            "enum": [
+                                                "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojd",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_Nockhojd",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkNockhojdNollplan",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_NockhojdNollplan",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_ByggnadsverkTotalhojd",
+                                                "DP_KM_Eg_Hojd_HogstaHojd_TotalhojdNollplan"
+                                            ]
                                         },
                                         "hWorksValue": {
                                             "type": "number"
@@ -332,7 +417,12 @@
                                             "type": "number"
                                         }
                                     },
-                                    "required": ["hWorksNote", "hWorksSubType", "hWorksValue", "hWorksID"],
+                                    "required": [
+                                        "hWorksNote",
+                                        "hWorksSubType",
+                                        "hWorksValue",
+                                        "hWorksID"
+                                    ],
                                     "additionalProperties": false
                                 },
                                 "municipality": {
@@ -341,7 +431,6 @@
                                 "restrictionOfLandUse": {
                                     "type": "string"
                                 },
-
                                 "roofAngle": {
                                     "type": "object",
                                     "properties": {
@@ -350,13 +439,23 @@
                                         },
                                         "rAngleSubType": {
                                             "type": "string",
-                                            "enum": ["DP_KM_Eg_Takvinkel_Storsta_Storsta", "DP_KM_Eg_Takvinkel_Storsta_Byggnad", "DP_KM_Eg_Takvinkel_Storsta_Annan", "DP_KM_Eg_Takvinkel_Minsta_Minsta", "DP_KM_Eg_Takvinkel_Minsta_Byggnad"]
+                                            "enum": [
+                                                "DP_KM_Eg_Takvinkel_Storsta_Storsta",
+                                                "DP_KM_Eg_Takvinkel_Storsta_Byggnad",
+                                                "DP_KM_Eg_Takvinkel_Storsta_Annan",
+                                                "DP_KM_Eg_Takvinkel_Minsta_Minsta",
+                                                "DP_KM_Eg_Takvinkel_Minsta_Byggnad"
+                                            ]
                                         },
                                         "rAngleValue": {
                                             "type": "number"
                                         }
                                     },
-                                    "required": ["rAngleNote", "rAngleSubType", "rAngleValue"],
+                                    "required": [
+                                        "rAngleNote",
+                                        "rAngleSubType",
+                                        "rAngleValue"
+                                    ],
                                     "additionalProperties": false
                                 },
                                 "propertySize1": {
@@ -367,16 +466,23 @@
                                         },
                                         "pSizeSubType": {
                                             "type": "string",
-                                            "enum": ["DP_KM_Eg_Fastighetsstorlek_Storsta_Storsta", "DP_KM_Eg_Fastighetsstorlek_Minsta_Minsta"]
+                                            "enum": [
+                                                "DP_KM_Eg_Fastighetsstorlek_Storsta_Storsta",
+                                                "DP_KM_Eg_Fastighetsstorlek_Minsta_Minsta"
+                                            ]
                                         },
                                         "pSizeID": {
                                             "type": "number"
                                         }
                                     },
-                                    "required": ["pSizeValue", "pSizeSubType", "pSizeID"],
+                                    "required": [
+                                        "pSizeValue",
+                                        "pSizeSubType",
+                                        "pSizeID"
+                                    ],
                                     "additionalProperties": false
                                 },
-								"propertySize2": {
+                                "propertySize2": {
                                     "type": "object",
                                     "properties": {
                                         "pSizeValue": {
@@ -384,16 +490,23 @@
                                         },
                                         "pSizeSubType": {
                                             "type": "string",
-                                            "enum": ["DP_KM_Eg_Fastighetsstorlek_Storsta_Storsta", "DP_KM_Eg_Fastighetsstorlek_Minsta_Minsta"]
+                                            "enum": [
+                                                "DP_KM_Eg_Fastighetsstorlek_Storsta_Storsta",
+                                                "DP_KM_Eg_Fastighetsstorlek_Minsta_Minsta"
+                                            ]
                                         },
                                         "pSizeID": {
                                             "type": "number"
                                         }
                                     },
-                                    "required": ["pSizeValue", "pSizeSubType", "pSizeID"],
+                                    "required": [
+                                        "pSizeValue",
+                                        "pSizeSubType",
+                                        "pSizeID"
+                                    ],
                                     "additionalProperties": false
                                 },
-								"propertySize3": {
+                                "propertySize3": {
                                     "type": "object",
                                     "properties": {
                                         "pSizeValue": {
@@ -401,16 +514,23 @@
                                         },
                                         "pSizeSubType": {
                                             "type": "string",
-                                            "enum": ["DP_KM_Eg_Fastighetsstorlek_Storsta_Storsta", "DP_KM_Eg_Fastighetsstorlek_Minsta_Minsta"]
+                                            "enum": [
+                                                "DP_KM_Eg_Fastighetsstorlek_Storsta_Storsta",
+                                                "DP_KM_Eg_Fastighetsstorlek_Minsta_Minsta"
+                                            ]
                                         },
                                         "pSizeID": {
                                             "type": "number"
                                         }
                                     },
-                                    "required": ["pSizeValue", "pSizeSubType", "pSizeID"],
+                                    "required": [
+                                        "pSizeValue",
+                                        "pSizeSubType",
+                                        "pSizeID"
+                                    ],
                                     "additionalProperties": false
                                 },
-								"propertySize4": {
+                                "propertySize4": {
                                     "type": "object",
                                     "properties": {
                                         "pSizeValue": {
@@ -418,13 +538,20 @@
                                         },
                                         "pSizeSubType": {
                                             "type": "string",
-                                            "enum": ["DP_KM_Eg_Fastighetsstorlek_Storsta_Storsta", "DP_KM_Eg_Fastighetsstorlek_Minsta_Minsta"]
+                                            "enum": [
+                                                "DP_KM_Eg_Fastighetsstorlek_Storsta_Storsta",
+                                                "DP_KM_Eg_Fastighetsstorlek_Minsta_Minsta"
+                                            ]
                                         },
                                         "pSizeID": {
                                             "type": "number"
                                         }
                                     },
-                                    "required": ["pSizeValue", "pSizeSubType", "pSizeID"],
+                                    "required": [
+                                        "pSizeValue",
+                                        "pSizeSubType",
+                                        "pSizeID"
+                                    ],
                                     "additionalProperties": false
                                 },
                                 "investment": {
@@ -436,37 +563,44 @@
                                 "performance": {
                                     "type": "string"
                                 }
-
                             }
                         },
-
                         "geometry": {
                             "type": "array",
                             "items": {
-                                "oneOf": [{
+                                "oneOf": [
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiLineString"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSurface"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/Solid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/CompositeSolid"
-                                    }, {
+                                    },
+                                    {
                                         "$ref": "geomprimitives.schema.json#/MultiSolid"
                                     }
-
                                 ]
                             }
                         }
                     },
-                    "required": ["type", "geometry"]
+                    "required": [
+                        "type",
+                        "geometry"
+                    ]
                 }
             ]
         }
-
     },
-    "extraRootProperties": {},
-    "extraSemanticSurfaces": {}
+    "extraRootProperties": {
+    },
+    "extraSemanticSurfaces": {
+    }
 }
