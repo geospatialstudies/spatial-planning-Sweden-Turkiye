@@ -8,4 +8,6 @@
 
 ## Turkish spatial plan
 
+The screenshot from e-plan system belonging to Turkish spatial plan can be seen below;
+
 ![](/figures/e-plan.jpg)
