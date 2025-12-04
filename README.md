@@ -8,4 +8,4 @@
 
 ## Turkish spatial plan
 
-!()
+!(/figures/e-plan.jpg)
