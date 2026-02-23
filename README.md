@@ -11,3 +11,6 @@
 The screenshot from e-plan system belonging to Turkish spatial plan can be seen below;
 
 ![](/figures/e-plan.jpg)
+
+You can refer the article that presents the results related to this repository:
+"Guler, D., Sun, J., & Paulsson, J. (2026). Representing the Spatial Plans as 3D Standardized Geodatasets: Demonstrations From Sweden and Türkiye. Transactions in GIS 30, no. 1: e70186. https://doi.org/10.1111/tgis.70186"
